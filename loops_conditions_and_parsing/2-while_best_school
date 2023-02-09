@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Counter variable to keep track of the number of times the loop has run
-counter=0
+# This script display "Best school" 10 times
 
-# While loop that continues until the counter reaches 10
 while [ $counter -lt 10 ]
 do
   echo "Best School"
