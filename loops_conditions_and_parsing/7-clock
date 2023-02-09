@@ -13,4 +13,4 @@ do
   done
   hours=$((hours + 1))
   minutes=0
-done | head -70
+done
