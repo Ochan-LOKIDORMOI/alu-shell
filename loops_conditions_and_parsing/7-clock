@@ -2,13 +2,13 @@
 # Displays the time for 12 hours and 59 minutes.
 
 hours=0
-minutes=0
+minutes=1
 
 while [ $hours -lt 13 ]; do
   while [ $minutes -lt 60 ]; do
-    echo "$hours:$minutes"
+    echo "$hours$(printf %02d $minutes)"
     minutes=$((minutes + 1))
   done
   minutes=0
   hours=$((hours + 1))
-done | head -70
+done | head -720 | tail -700
