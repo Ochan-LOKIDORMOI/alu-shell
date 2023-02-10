@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
-# This script displays the content of the cueernt directory in list format
+# Displays the content of the current directory in list format.
+# only displays the part of the name after the first dash.
 
-for files=(*)
-
-if [ ${#files[@]} -eq 0 ]; then
-  echo "The directory is empty."
-else
-  for file in "${files[@]}"; do
-    if [ -f "$file" ] && [ "${file:0:1}" != "." ]; then
-      name=$(echo "$file" | cut -d'-' -f2-)
-      echo " - $name"
-    fi
-  done
-fi
+list=$(ls)
+for i in $list; do
+        echo "$i" | cut -d '-' -f2
+done
