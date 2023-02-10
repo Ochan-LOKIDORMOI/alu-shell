@@ -12,4 +12,4 @@ while [ $hours -lt 13 ]; do
   done
   minutes=0
   hours=$((hours + 1))
-done | head -70
+done
