@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# A Bash script that gives you information about the school life.
+# a Bash script that gives you information about the school life.
 
 file="school"
 
@@ -17,5 +17,5 @@ else
 	fi
 fi
 else
-	echo "school file does not exist"
+	echo "school file does not exist"
 fi
