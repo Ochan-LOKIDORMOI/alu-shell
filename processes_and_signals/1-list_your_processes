@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script displays 
 
-echo "USER PID %CPU %MEM  VSZ  RSS TTY   STAT START  TIME COMMAD"
-echo "----------------------------------------------------------"
+echo "PID  PPID  USER     CMD"
+echo "-----------------------"
