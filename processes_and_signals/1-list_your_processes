@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script displays 
 
-echo "PID  PPID  USER     CMD"
+echo "PID"
 echo "-----------------------"
