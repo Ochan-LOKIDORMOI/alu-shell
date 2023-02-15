@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # This script displays 
 
-echo "PID"
+echo "PID  PPID USER     CMD"
 echo "-----------------------"
+
+ps axo pid,ppid,user,cmd --forest
