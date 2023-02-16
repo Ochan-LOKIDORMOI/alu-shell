@@ -2,9 +2,11 @@
 #This is a script that stops 4-to_infinity_and_beyond process
 # You must use kill
 
-# Terminate  the infinnate process 
+# Get the pid of the program
 id=$(pgrep "bash ./4-to_infinity_and_beyond -f)
 
-# Terminate if[-n "$id"];then
+# Terminate the infinate process
+if[-n "$id"]
+then	
   kill -15 "$id"
 fi
