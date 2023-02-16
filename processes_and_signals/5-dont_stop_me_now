@@ -7,7 +7,7 @@ PID=$(pgrep 4-to_infinity_and_beyond)
 
 # Check if the process is running
 if [ -z "$PID" ]; then
-  echo "Process is not running."
+  echo "Process is running"
   exit 1
 fi
 
@@ -19,5 +19,4 @@ while kill -0 "$PID" 2>/dev/null; do
   sleep 1
 done
 
-echo "Process has been stopped."
-
+echo "Process has been stopped"
